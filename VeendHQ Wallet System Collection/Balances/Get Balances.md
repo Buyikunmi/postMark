@@ -1,0 +1,23 @@
+
+##  <img src="https://img.shields.io/badge/GET-177e23?style=flat" alt="GET" style="height: 30px;"/> Get Balances
+Get Balances for accounts you have access to.
+```
+{{url}}/v1/balances/?account=5a762c916b4fc6001973a89a&accountId=5a762c916b4fc6001973a89a
+```
+### Headers
+
+|Content-Type|Value|
+|---|---|
+|Content-Type|application/json|
+|x-tag|MDg4NWM1NTA0ZTZlNTQ5MjAzNzA1ODBlOWVkNzI3MzdlNmYxZTcyMjVkOTA3N2JjYTBhZjA0YmM0N2U4NDZkNi8vLy8vLzQ1MDY=|
+|Authorization|Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNkbEBlbnNlbWJsZWxhYi5jb20ubmciLCJ1c2VyIjp7Il9pZCI6IjVhNzYyYzkxNmI0ZmM2MDAxOTczYTg5NyIsIm1vZGVsIjoiVXNlcnMiLCJfX3YiOjUsInRhZ3MiOltdLCJjcmVhdGVkQXQiOiIyMDE4LTAyLTAzVDIxOjQxOjM3LjY1NFoiLCJyb2xlcyI6WyI1YTc2MmM5MTZiNGZjNjAwMTk3M2E4OWMiLCI1YTc2MmFjMmFjNjY0NjAwMTk4NjAxZGMiXSwiaXNCbG9ja2VkIjpmYWxzZSwia3ljVmVyaWZpY2F0aW9uU3RhdHVzIjoibm90X3ZlcmlmaWVkIiwiYXV0aGVudGljYXRpb25zIjpbIjVhNzYyYzkxNmI0ZmM2MDAxOTczYTg5YiJdLCJhZGRyZXNzQm9va3MiOlsiNWE3NjJjOTE2YjRmYzYwMDE5NzNhODk4Il0sImFjY291bnRzIjpbIjVhNzYyYzkxNmI0ZmM2MDAxOTczYTg5YSJdLCJyZWZlcnJhbENvZGUiOiJCSmxxY25qbUxHIn0sImFjY291bnQiOnsiX2lkIjoiNWE3NjJjOTE2YjRmYzYwMDE5NzNhODlhIiwibmFtZSI6ImNkbEBlbnNlbWJsZWxhYi5jb20ubmciLCJfX3YiOjAsImJhbGFuY2UiOjIsInRhZ3MiOltdLCJjcmVhdGVkQXQiOiIyMDE4LTAyLTAzVDIxOjQxOjM3LjcxMVoiLCJ1c2VycyI6WyI1YTc2MmM5MTZiNGZjNjAwMTk3M2E4OTciXX0sImlhdCI6MTUxNzc4MDk4NCwiZXhwIjoxNTE3Nzg0NTg0LCJhdWQiOiJteWdpcm8uY28iLCJpc3MiOiJlbnNlbWJsZWxhYi5jb20ubmciLCJzdWIiOiI1YTc2MmM5MTZiNGZjNjAwMTk3M2E4OTcifQ.VnKnhQS0ZtndNWfg_xQlnCR9g4_1xaNBi_g8mlqqZ2A|
+
+### Query Parameters
+
+|Param|Value|
+|---|---|
+|account|5a762c916b4fc6001973a89a|
+|accountId|5a762c916b4fc6001973a89a|
+
+
+---

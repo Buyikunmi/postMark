@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "cc9a1fe8-4232-4783-911e-d655beeb5e58",
+		"name": "Veend Commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36306437"
+	},
+	"item": [
+		{
+			"name": "User Authentication",
+			"item": [
+				{
+					"name": "Sub Folder",
+					"item": [
+						{
+							"name": "Delete User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"securePassword123\"\n}"
+								},
+								"url": {
+									"raw": "https://api.ecommerce.com/login",
+									"protocol": "https",
+									"host": [
+										"api",
+										"ecommerce",
+										"com"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": ""
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\",\n  \"user\": {\n    \"id\": \"1\",\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\"\n  }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"password\": \"securePassword123\"\n}"
+						},
+						"url": {
+							"raw": "https://api.ecommerce.com/register",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ecommerce",
+								"com"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"id\": \"1\",\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"createdAt\": \"2024-09-12T10:00:00Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"securePassword123\"\n}"
+						},
+						"url": {
+							"raw": "https://api.ecommerce.com/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ecommerce",
+								"com"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\",\n  \"user\": {\n    \"id\": \"1\",\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\"\n  }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Product Management",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.ecommerce.com/products",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ecommerce",
+								"com"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": \"123\",\n    \"name\": \"Smartphone X\",\n    \"price\": 999.99,\n    \"category\": \"electronics\",\n    \"description\": \"A high-end smartphone with stunning features.\"\n  },\n  {\n    \"id\": \"124\",\n    \"name\": \"Laptop Pro\",\n    \"price\": 1999.99,\n    \"category\": \"electronics\",\n    \"description\": \"A powerful laptop for professionals.\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Product by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.ecommerce.com/products/123",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ecommerce",
+								"com"
+							],
+							"path": [
+								"products",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"id\": \"123\",\n  \"name\": \"Smartphone X\",\n  \"price\": 999.99,\n  \"category\": \"electronics\",\n  \"description\": \"A high-end smartphone with stunning features.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Smartphone X\",\n  \"price\": 999.99,\n  \"category\": \"electronics\",\n  \"description\": \"A high-end smartphone with stunning features.\"\n}"
+						},
+						"url": {
+							"raw": "https://api.ecommerce.com/products",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ecommerce",
+								"com"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Created Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"id\": \"123\",\n  \"name\": \"Smartphone X\",\n  \"price\": 999.99,\n  \"category\": \"electronics\",\n  \"description\": \"A high-end smartphone with stunning features.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order Management",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productId\": \"123\",\n  \"quantity\": 1,\n  \"address\": \"123 Main St, Anytown, USA\",\n  \"paymentMethod\": \"credit_card\"\n}"
+						},
+						"url": {
+							"raw": "https://api.ecommerce.com/orders",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ecommerce",
+								"com"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"orderId\": \"987\",\n  \"status\": \"pending\",\n  \"total\": 999.99,\n  \"product\": {\n    \"id\": \"123\",\n    \"name\": \"Smartphone X\",\n    \"quantity\": 1,\n    \"price\": 999.99\n  },\n  \"address\": \"123 Main St, Anytown, USA\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Order by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "https://api.ecommerce.com/orders/987",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ecommerce",
+								"com"
+							],
+							"path": [
+								"orders",
+								"987"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\n  \"orderId\": \"987\",\n  \"status\": \"pending\",\n  \"total\": 999.99,\n  \"product\": {\n    \"id\": \"123\",\n    \"name\": \"Smartphone X\",\n    \"quantity\": 1,\n    \"price\": 999.99\n  },\n  \"address\": \"123 Main St, Anytown, USA\",\n  \"createdAt\": \"2024-09-12T11:00:00Z\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	}
+}

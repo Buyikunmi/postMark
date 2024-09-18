@@ -1,0 +1,35 @@
+
+##  <img src="https://img.shields.io/badge/PATCH-7711A7?style=flat" alt="PATCH" style="height: 30px;"/> Update User
+```
+{{url}}/v1/users/5d88e7c445f3b200115f91a1?accountId=5d88e7c445f3b200115f91a4
+```
+### Headers
+
+|Content-Type|Value|
+|---|---|
+|Content-Type|application/json|
+|x-tag|MDg4NWM1NTA0ZTZlNTQ5MjAzNzA1ODBlOWVkNzI3MzdlNmYxZTcyMjVkOTA3N2JjYTBhZjA0YmM0N2U4NDZkNi8vLy8vLzQ1MDY=|
+|Authorization|Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZlbWlAeWFob28udGFhIiwidXNlciI6eyJhY2NvdW50cyI6WyI1ZDg4ZTdjNDQ1ZjNiMjAwMTE1ZjkxYTQiXSwiYWRkcmVzc0Jvb2tzIjpbIjVkODhlN2M0NDVmM2IyMDAxMTVmOTFhMiJdLCJhdXRoZW50aWNhdGlvbnMiOlsiNWQ4OGU3YzQ0NWYzYjIwMDExNWY5MWE1Il0sImt5Y1ZlcmlmaWNhdGlvblN0YXR1cyI6Im5vdF92ZXJpZmllZCIsImlzQmxvY2tlZCI6ZmFsc2UsInJvbGVzIjpbIjVkODhlN2M0NDVmM2IyMDAxMTVmOTFhNiIsIjVhNzYyYWMyYWM2NjQ2MDAxOTg2MDFkYyJdLCJ0YWdzIjpbIm5vdF92ZXJpZmllZCIsIlNreG5wRERVd0IiXSwiX2lkIjoiNWQ4OGU3YzQ0NWYzYjIwMDExNWY5MWExIiwicmVmZXJyYWxDb2RlIjoiU2t4bnBERFV3QiIsImNyZWF0ZWRBdCI6IjIwMTktMDktMjNUMTU6NDE6NTYuMjM0WiIsIm1vZGVsIjoiVXNlcnMiLCJfX3YiOjUsInVwZGF0ZWRBdCI6IjIwMTktMDktMjNUMTU6NDE6NTYuMjgyWiJ9LCJhY2NvdW50Ijp7InVzZXJzIjpbIjVkODhlN2M0NDVmM2IyMDAxMTVmOTFhMSJdLCJ0YWdzIjpbXSwiX2lkIjoiNWQ4OGU3YzQ0NWYzYjIwMDExNWY5MWE0IiwibmFtZSI6ImZlbWlAeWFob28udGFhIiwiY3JlYXRlZEF0IjoiMjAxOS0wOS0yM1QxNTo0MTo1Ni4zMjFaIiwiX192IjowLCJiYWxhbmNlIjoxNDF9LCJpYXQiOjE1NjkyNTg1NTgsImV4cCI6MTU2OTI2MjE1OCwiYXVkIjoibXlnaXJvLmNvIiwiaXNzIjoiZW5zZW1ibGVsYWIuY29tLm5nIiwic3ViIjoiNWQ4OGU3YzQ0NWYzYjIwMDExNWY5MWExIn0.I1JGg3255Eldg76ZYZZKug8DwaVjFmfUCRbd_XVhakI|
+
+### Query Parameters
+
+|Param|Value|
+|---|---|
+|accountId|5d88e7c445f3b200115f91a4|
+
+### Body (**raw**)
+
+```json
+{
+    "firstName": "femi",
+    "lastName": "olanipekun",
+    "BVN": "12345678901",
+    "address": "fghf,fhffh, gjg",
+    "addressState": "lagos",
+    "businessName": "businessName",
+    "rcNumber": "1234567"
+}
+```
+
+
+---

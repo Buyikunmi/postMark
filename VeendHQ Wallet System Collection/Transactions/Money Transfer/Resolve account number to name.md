@@ -1,0 +1,63 @@
+
+##  <img src="https://img.shields.io/badge/POST-fbe07c?style=flat" alt="POST" style="height: 30px;"/> Resolve account number to name
+Get the name of the bank account holder
+```
+{{url}}/v1/products/{{productID}}/validate?accountId=625559690b4f4a0013275bfa
+```
+### Headers
+
+|Content-Type|Value|
+|---|---|
+|Content-Type|application/json|
+|x-tag|MDg4NWM1NTA0ZTZlNTQ5MjAzNzA1ODBlOWVkNzI3MzdlNmYxZTcyMjVkOTA3N2JjYTBhZjA0YmM0N2U4NDZkNi8vLy8vLzQ1MDY=|
+|Authorization|Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImR1bW15Y29AdmVlbmRocS5jb20iLCJ1c2VyIjp7InR3b0ZhY3RvciI6ZmFsc2UsImFjY291bnRzIjpbIjYyNTU1OTY5MGI0ZjRhMDAxMzI3NWJmYSJdLCJhZGRyZXNzQm9va3MiOlsiNjI1NTU5NjkwYjRmNGEwMDEzMjc1YmYzIiwiNjI1NTU5NjkwYjRmNGEwMDEzMjc1YmY0Il0sImF1dGhlbnRpY2F0aW9ucyI6WyI2MjU1NTk2OTBiNGY0YTAwMTMyNzViZmUiXSwia3ljVmVyaWZpY2F0aW9uU3RhdHVzIjoibm90X3ZlcmlmaWVkIiwiaXNCbG9ja2VkIjpmYWxzZSwicm9sZXMiOlsiNjI1NTU5NmEwYjRmNGEwMDEzMjc1YzA0IiwiNjIzYjQ1Yjk0NjNiN2EwMDEzZDI5NzM4IiwiNjMxZjI3MGYxOWM5NzIwMDEzMzNkMGM5Il0sImNhcmRzIjpbXSwidGFncyI6WyJub3RfdmVyaWZpZWQiLCJkdW1teSIsImFjY291bnQiLCJucUtrcmo4WW9qIiwiMTEiLCI2Njc3NTUyNzE5MCIsIjEwIiwiRHVtbXljbyIsIkxhbmUsIiwiSWtlamEiLCJMYWdvcyIsImR1bW15Y28iLCI2MjU1NTk2OTBiNGY0YTAwMTMyNzViZmEiLCI2MjU1NTk2OTBiNGY0YTAwMTMyNzViZmEiLCI2Njc3NTUyNzE5MCJdLCJfaWQiOiI2MjU1NTk2OTBiNGY0YTAwMTMyNzViZjEiLCJmaXJzdE5hbWUiOiJkdW1teSIsImxhc3ROYW1lIjoiYWNjb3VudCIsInJlZmVycmFsQ29kZSI6Im5xS2tyajhZb2oiLCJjcmVhdGVkQXQiOiIyMDIyLTA0LTEyVDEwOjUwOjE3LjA4MVoiLCJtb2RlbCI6IlVzZXJzIiwiX192Ijo3LCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTE4VDEyOjM4OjUwLjczNVoiLCJjbGllbnRJZCI6IjExIiwiQlZOIjoiNjY3NzU1MjcxOTAiLCJhZGRyZXNzIjoiMTAgRHVtbXljbyBMYW5lLCBJa2VqYSIsImFkZHJlc3NTdGF0ZSI6IkxhZ29zIiwiYnVzaW5lc3NOYW1lIjoiZHVtbXljbyIsImNyZWF0ZWRCeSI6IjYyNTU1OTY5MGI0ZjRhMDAxMzI3NWJmYSIsIm93bmVyIjoiNjI1NTU5NjkwYjRmNGEwMDEzMjc1YmZhIiwicmNOdW1iZXIiOiI2Njc3NTUyNzE5MCJ9LCJhY2NvdW50Ijp7InVzZXJzIjpbIjYyNTU1OTY5MGI0ZjRhMDAxMzI3NWJmMSJdLCJhdXRvUmV0cnkiOnRydWUsImJhbGFuY2VUaHJlc2hvbGQiOjAsImFjY291bnRUeXBlIjoiYWN0aXZlIiwidGFncyI6W10sIl9pZCI6IjYyNTU1OTY5MGI0ZjRhMDAxMzI3NWJmYSIsIm5hbWUiOiJkdW1teWNvQHZlZW5kaHEuY29tIiwiY3VycmVuY3kiOiJOR04iLCJjcmVhdGVkQXQiOiIyMDIyLTA0LTEyVDEwOjUwOjE3LjI3MFoiLCJfX3YiOjAsImJhbGFuY2UiOjgsInNhdmluZ3NJZCI6IjExIiwidXBkYXRlZEF0IjoiMjAyMi0wNC0xMlQxMDo1MDoyMC43ODlaIiwiYWNjb3VudE51bWJlciI6Ijc4MjQ5MDIzMTYiLCJiYW5rQ29kZSI6IiIsImJhbmtOYW1lIjoid2VtYSJ9LCJpYXQiOjE2NjQyNzIxODcsImV4cCI6MTY2NDI3NTc4NywiYXVkIjoidmVlbmRocS5jb20iLCJpc3MiOiJ2ZWVuZGhxLmNvbSIsInN1YiI6IjYyNTU1OTY5MGI0ZjRhMDAxMzI3NWJmMSJ9.gyRnYgP82QUkvccv1-viTPeZij4R9nwKGaRclRGnLs0|
+
+### Query Parameters
+
+|Param|Value|
+|---|---|
+|accountId|625559690b4f4a0013275bfa|
+
+### Body (**raw**)
+
+```json
+{
+    "account_number": "0690000010",
+    "bank_code": "044"
+}
+```
+
+## Sample Request
+
+{% tabs %}
+  {% tab title="Resolve account number to name" %}
+```bash
+curl --location --request POST 'https://sandbox.mygiro.co/v1/products/5a9297612032791140ff390f/validate?accountId=5a762dd910af17001963f22a' \
+--header 'Content-Type: application/json' \
+--header 'x-tag: MDg4NWM1NTA0ZTZlNTQ5MjAzNzA1ODBlOWVkNzI3MzdlNmYxZTcyMjVkOTA3N2JjYTBhZjA0YmM0N2U4NDZkNi8vLy8vLzQ1MDY=' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAZW5zZW1ibGVsYWIuY29tLm5nIiwidXNlciI6eyJfaWQiOiI1YTc2MmRkOTEwYWYxNzAwMTk2M2YyMjciLCJtb2RlbCI6IlVzZXJzIiwiX192Ijo1LCJ0YWdzIjpbXSwiY3JlYXRlZEF0IjoiMjAxOC0wMi0wM1QyMTo0NzowNS4wMzBaIiwicm9sZXMiOlsiNWE3NjJkZDkxMGFmMTcwMDE5NjNmMjJjIiwiNWE3NjJhYzJhYzY2NDYwMDE5ODYwMWRjIl0sImlzQmxvY2tlZCI6ZmFsc2UsImt5Y1ZlcmlmaWNhdGlvblN0YXR1cyI6Im5vdF92ZXJpZmllZCIsImF1dGhlbnRpY2F0aW9ucyI6WyI1YTc2MmRkOTEwYWYxNzAwMTk2M2YyMmIiXSwiYWRkcmVzc0Jvb2tzIjpbIjVhNzYyZGQ5MTBhZjE3MDAxOTYzZjIyOCJdLCJhY2NvdW50cyI6WyI1YTc2MmRkOTEwYWYxNzAwMTk2M2YyMmEiXSwicmVmZXJyYWxDb2RlIjoicmt4YjEwalg4RyJ9LCJhY2NvdW50Ijp7Il9pZCI6IjVhNzYyZGQ5MTBhZjE3MDAxOTYzZjIyYSIsIm5hbWUiOiJ1c2VyQGVuc2VtYmxlbGFiLmNvbS5uZyIsIl9fdiI6MCwiYmFsYW5jZSI6MywidGFncyI6W10sImNyZWF0ZWRBdCI6IjIwMTgtMDItMDNUMjE6NDc6MDUuMDg5WiIsInVzZXJzIjpbIjVhNzYyZGQ5MTBhZjE3MDAxOTYzZjIyNyJdfSwiaWF0IjoxNTE5OTE5MDQ5LCJleHAiOjE1MTk5MjI2NDksImF1ZCI6Im15Z2lyby5jbyIsImlzcyI6ImVuc2VtYmxlbGFiLmNvbS5uZyIsInN1YiI6IjVhNzYyZGQ5MTBhZjE3MDAxOTYzZjIyNyJ9.ErHud15ibOTRrMSeOFCto7mhre1WCYwqc7ca0vpoVgY' \
+--data '{
+    "account_number": "0690000005",
+    "bank_code": "044"
+}'
+```
+  {% endtab %}
+{% endtabs %}
+
+## Sample Response
+
+{% tabs %}
+  {% tab title="Resolve account number to name" %}
+```json
+{
+  "status": "success",
+  "data": {
+    "account_name": "ANGUS BROWN"
+  }
+}
+```
+  {% endtab %}
+{% endtabs %}
+
+
+---
